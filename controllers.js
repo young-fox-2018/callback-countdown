@@ -1,6 +1,7 @@
 const { displayCountdown } = require("./views");
 
 const timer = seconds  => {
+  
   let myVar = setInterval(function() {
       let minutes = parseInt(seconds / 60)
       let second = seconds % 60 
@@ -18,6 +19,7 @@ const timer = seconds  => {
       }
     
       seconds -= 1
+      
     }, 1000)
   };
 
