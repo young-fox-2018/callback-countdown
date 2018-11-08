@@ -5,14 +5,12 @@ const timer = seconds => {
   displayCountdown(i)
   setInterval(function () {
     i--
-    if (i <= 0) {
-      displayCountdown(0)
-      clearInterval()
+    if (i <= 0) { 
+      clearInterval(this)
     } else {
       displayCountdown(i)
     }
-
-  }, 1000)
+  }, 200)
 };
 
 
