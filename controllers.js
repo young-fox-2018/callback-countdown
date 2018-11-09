@@ -10,7 +10,7 @@ const timer = seconds => {
     } else {
       displayCountdown(i)
     }
-  }, 200)
+  }, 1000)
 };
 
 
